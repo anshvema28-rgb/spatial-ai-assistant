@@ -32,7 +32,7 @@ jobs:
           cache: pip
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v4
+        uses: android/checkout@v4
         with:
           cmdline-tools-version: 16.0
 
