@@ -58,7 +58,7 @@ jobs:
 
       - name: Install Android SDK Build Tools
         run: |
-          sdkmanager "build-tools;35.0.0" "platform-tools" "platforms;android-35"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;35.0.0" "platform-tools" "platforms;android-35"
 
       - name: Add AIDL to PATH
         run: |
