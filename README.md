@@ -1,0 +1,1 @@
+Hindi AI Voice Assistant built with Python. The assistant will eventually support Hindi speech input, Hindi voice replies, and AI-powered conversation.

@@ -1,0 +1,13 @@
+# Desktop requirements
+python-dotenv
+SpeechRecognition
+pyttsx3
+groq
+customtkinter
+psutil
+
+# Android requirements (for buildozer)
+# kivy==2.3.0
+# plyer
+# jnius
+# psutil
