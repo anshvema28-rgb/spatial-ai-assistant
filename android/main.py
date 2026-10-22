@@ -1,4 +1,4 @@
-from kivy.app import App
+import kivy.app
 from kivy.uix.widget import Widget
 from kivy.clock import Clock
 from kivy.logger import Logger
@@ -10,7 +10,7 @@ from android.services.permissions import request_required_permissions, request_a
 import threading
 
 
-class SpatialAIApp(App):
+class SpatialAIApp(kivy.app.App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.ai_service = None
