@@ -18,7 +18,7 @@ source.include_patterns = android/**,*.py
 version = 1.0.0
 
 # Requirements for python-for-android
-requirements = python3==3.11.17,hostpython3==3.11.17,kivy==2.3.0,plyer,jnius,requests,python-dotenv,groq,openssl
+requirements = python3,hostpython3,kivy==2.3.0,plyer,requests,python-dotenv,groq,openssl
 
 # Android specific
 android.permissions = RECORD_AUDIO,INTERNET,ACCESS_NETWORK_STATE,CAMERA,MODIFY_AUDIO_SETTINGS,BLUETOOTH,BLUETOOTH_ADMIN,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
@@ -29,37 +29,37 @@ android.sdk = 33
 android.accept_sdk_license = True
 
 # Architecture
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
 
 # p4a branch
-p4a.branch = master
+p4a.branch = stable
 
 # Build options
-android.gradle_dependencies = 
+android.gradle_dependencies =
 android.enable_androidx = True
 android.gradle_wrapper = True
 
 # App orientation
 android.orientation = portrait
 
-# Icon and presplash (add your own)
+# Icon and presplash
 # android.icon = assets/icon.png
 # android.presplash = assets/presplash.png
 
 # Intent filters for voice assistant
-android.intent_filters = 
+android.intent_filters =
 
 # Meta data
-android.meta_data = 
+android.meta_data =
 
-# Services (for background operation)
-# android.services = 
+# Services
+# android.services =
 
 # Python optimization
 android.python_optimize = 2
 
 # Private storage
-android.private_storage = 
+android.private_storage =
 
 # Wakelock
 android.wakelock = True
@@ -68,24 +68,15 @@ android.wakelock = True
 android.log_level = info
 
 [buildozer]
-
-# Log level
 log_level = 2
-
-# Warn on root
 warn_on_root = 1
 
-# Artifacts directory
-# artifacts_dir = 
-
 [presplash]
-# presplash settings
-presplash.filename = 
+presplash.filename =
 presplash.color = #0a0a12
 presplash.always_show = False
 
 [icon]
-# icon settings
-icon.filename = 
+icon.filename =
 icon.adaptive_background = #0a0a12
-icon.adaptive_foreground =
+icon.adaptive_foreground = #ffffff
