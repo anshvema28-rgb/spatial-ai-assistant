@@ -18,8 +18,7 @@ source.include_patterns = android/**,*.py
 version = 1.0.0
 
 # Requirements for python-for-android
-requirements = python3,hostpython3,kivy==2.3.0,plyer,requests,python-dotenv,groq,openssl
-
+requirements = python3==3.11.17,hostpython3==3.11.17,kivy==2.3.0,plyer,requests,python-dotenv,groq,openssl
 # Android specific
 android.permissions = RECORD_AUDIO,INTERNET,ACCESS_NETWORK_STATE,CAMERA,MODIFY_AUDIO_SETTINGS,BLUETOOTH,BLUETOOTH_ADMIN,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
 android.api = 33
