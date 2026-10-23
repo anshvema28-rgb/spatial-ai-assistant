@@ -18,9 +18,7 @@ source.include_patterns = android/**,*.py
 version = 1.0.0
 
 # Requirements for python-for-android
-# Use the recipe name pyjnius instead of jnius; Buildozer resolves the Android recipe
-# from the package name, and pip-installing pyjnius for the Android target is what fails.
-requirements = python3==3.11.17,hostpython3==3.11.17,kivy==2.3.0,pyjnius,plyer,requests,python-dotenv,groq,openssl
+requirements = python3==3.11.17,hostpython3==3.11.17,kivy==2.3.0,plyer,jnius,requests,python-dotenv,groq,openssl
 
 # Android specific
 android.permissions = RECORD_AUDIO,INTERNET,ACCESS_NETWORK_STATE,CAMERA,MODIFY_AUDIO_SETTINGS,BLUETOOTH,BLUETOOTH_ADMIN,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION
